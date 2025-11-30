@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideQuest: Off Class – Your Next Obsession</title>
+    <style>
+        :root {
+            --turquoise: #40E0D0;
+            --turquoise-light: #AFEEEE;
+            --turquoise-dark: #00CED1;
+            --white: #FFFFFF;
+            --dark: #2C3E50;
+            --gray: #F5F5F5;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--gray);
+            color: var(--dark);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--turquoise), var(--turquoise-dark));
+            padding: 1rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .slogan {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .search-bar {
+            width: 80%;
+            max-width: 500px;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background-color: var(--turquoise-light);
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .category {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .category h2 {
+            color: var(--turquoise-dark);
+            border-bottom: 2px solid var(--turquoise);
+            padding-bottom: 0.5rem;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .product {
+            background-color: var(--white);
+            border: 2px solid var(--turquoise);
+            border-radius: 10px;
+            padding: 1rem;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 0.5rem 0;
+            color: var(--turquoise-dark);
+        }
+
+        .product .price {
+            color: var(--turquoise);
+            font-weight: bold;
+        }
+
+        .product .description {
+            font-size: 0.8rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .product button {
+            background-color: #FFD1DC; /* pale pink */
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            color: var(--dark);
+            font-weight: bold;
+        }
+
+        footer {
+            background: linear-gradient(135deg, var(--turquoise-light), var(--turquoise));
+            text-align: center;
+            padding: 1rem;
+            color: var(--white);
+            font-style: italic;
+        }
+
+        .cart {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--turquoise-dark);
+            color: var(--white);
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SideQuest: Off Class</div>
+        <div class="slogan">This isn’t just a magazine: it’s your next obsession.</div>
+        <input type="text" class="search-bar" placeholder="Search for games, categories...">
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- Epic Boardgames Battle -->
+        <div class="category">
+            <h2>Epic Boardgames Battle</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://cdn.svc.asmodee.net/production-rprod/storage/games/7-wonders/sev-box-3d-1592411287XEcT9.png" alt="7 Wonders">
+                    <h3>7 Wonders</h3>
+                    <p class="description">Build your ancient civilization and crush your friends with science, culture, or just good old-fashioned war. Who needs homework when you can rewrite history?</p>
+                    <p class="price">$12.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/71v1DFYjDAL.jpg" alt="Goose Game">
+                    <h3>Goose Game</h3>
+                    <p class="description">The classic game of luck and chaos. Will you land on the goose and soar to victory, or get stuck in the maze of bad decisions? Only the dice know.</p>
+                    <p class="price">$8.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://cdn02.plentymarkets.com/utyca4p2ky0r/item/images/125/full/Ludo-3.jpg" alt="Ludo">
+                    <h3>Ludo</h3>
+                    <p class="description">Race your tokens home before your friends do. It’s like a marathon, but with more yelling and less sweat.</p>
+                    <p class="price">$5.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://static.fnac-static.com/multimedia/Images/FR/MDM/08/3b/38/3685128/3756-1/tsp20251121192239/Jeu-de-societe-Hasbro-Gaming-Cluedo-Nouvelle-Version.jpg" alt="Cluedo">
+                    <h3>Cluedo</h3>
+                    <p class="description">Who killed Mr. Boddy? Was it Colonel Mustard in the library with the candlestick? Or was it you, trying to avoid your essay deadline?</p>
+                    <p class="price">$9.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://www.bcd-jeux.fr/66227-pdt_771/monopoly-classique-2025-hasbro.jpg" alt="Monopoly">
+                    <h3>Monopoly</h3>
+                    <p class="description">Buy properties, build hotels, and bankrupt your friends. It’s capitalism in a box, and you’re the shark.</p>
+                    <p class="price">$11.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://toycra.com/cdn/shop/products/Hasbro-Gaming-Battleship-Board-Game-Classic-Strategy-Game-Board-Games-Hasbro-Toycra-2_700x700.jpg?v=1651683932" alt="Battleships">
+                    <h3>Battleships</h3>
+                    <p class="description">Sink your opponent’s fleet before they sink yours. It’s like naval warfare, but with less seasickness.</p>
+                    <p class="price">$7.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/61o1m-JlqqL.jpg" alt="Scrabble">
+                    <h3>Scrabble</h3>
+                    <p class="description">Flex your vocabulary and crush your friends with words they’ve never heard of. “Za” is totally a word, okay?</p>
+                    <p class="price">$10.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Friends and Fights -->
+        <div class="category">
+            <h2>Friends and Fights</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://www.zygomatic-games.com/wp-content/uploads/2020/04/lg04en_box3d_20210217-1007x1024.jpg" alt="Werewolf">
+                    <h3>The Werewolf of Miller Hollow</h3>
+                    <p class="description">Lie, deceive, and survive. Will you be the sneaky werewolf or the clueless villager? Either way, someone’s getting eaten.</p>
+                    <p class="price">$7.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/71ZnGQpm+GL._AC_UF894,1000_QL80_.jpg" alt="Jungle Speed">
+                    <h3>Jungle Speed</h3>
+                    <p class="description">Grab the totem before anyone else, but don’t grab the wrong one or you’re out. It’s fast, it’s furious, it’s chaos.</p>
+                    <p class="price">$6.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://assetsio.gnwcdn.com/cards-against-humanity-board-game-box.jpg?width=2048&height=2048&fit=bounds&quality=85&format=jpg&auto=webp" alt="Cards Against Humanity">
+                    <h3>Cards Against Humanity</h3>
+                    <p class="description">The game for horrible people. Match the most outrageous cards and laugh until you cry. Not for the faint of heart.</p>
+                    <p class="price">$10.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://cdn.shoplightspeed.com/shops/623437/files/11110241/image.jpg" alt="Concept">
+                    <h3>Concept</h3>
+                    <p class="description">Guess what your friends are trying to say using only icons. It’s like charades, but with less flailing and more confusion.</p>
+                    <p class="price">$9.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://cf.geekdo-images.com/BkdWHaRdo5NEIq93IQPsMQ__itemrep/img/jdAw05ZmexK23OB0HQhOPJY2Jy4=/fit-in/246x300/filters:strip_icc()/pic4455929.jpg" alt="Time's Up">
+                    <h3>Time's Up!</h3>
+                    <p class="description">Guess the celebrity before time runs out. Round 1: unlimited clues. Round 3: one word. Good luck.</p>
+                    <p class="price">$8.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/150?text=Bruno" alt="Bruno">
+                    <h3>Bruno</h3>
+                    <p class="description">A fast-paced, chaotic card game where you try to get rid of your cards first. It’s like Uno, but with more yelling.</p>
+                    <p class="price">$6.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mind Masters -->
+        <div class="category">
+            <h2>Mind Masters</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://media.4rgos.it/i/Argos/3904567_R_Z001A_UC706239?w=750&h=440&qlt=70" alt="Chess">
+                    <h3>Chess</h3>
+                    <p class="description">The ultimate battle of wits. Checkmate your opponent and feel like a genius. Or lose in three moves and question your life choices.</p>
+                    <p class="price">$4.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/81h66KWoTSL.jpg" alt="Go">
+                    <h3>Go</h3>
+                    <p class="description">Simple rules, endless strategy. Capture territory and outsmart your opponent. It’s like chess, but with more empty space.</p>
+                    <p class="price">$5.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.ebayimg.com/images/g/4x4AAOSwWDBgGDM7/s-l400.jpg" alt="Dominos">
+                    <h3>Dominos</h3>
+                    <p class="description">Match the numbers and block your opponents. It’s like math, but fun. Who knew?</p>
+                    <p class="price">$3.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/61ux8iXwDrL.jpg" alt="Mikados">
+                    <h3>Mikados</h3>
+                    <p class="description">Pick up sticks without moving the others. It’s like surgery, but with more cursing.</p>
+                    <p class="price">$4.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Tricks -->
+        <div class="category">
+            <h2>Card Tricks</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://www.tradeinn.com/f/14017/140171170/ludilo-skyjo-board-game.webp" alt="Skyjo">
+                    <h3>Skyjo</h3>
+                    <p class="description">Flip cards, collect points, and try not to go bust. It’s like poker, but with less bluffing and more math.</p>
+                    <p class="price">$6.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://www.amigo.games/wp-content/uploads/2024/08/18415_box.jpg" alt="Takes 5!">
+                    <h3>Takes 5!</h3>
+                    <p class="description">Play your cards in the right order and don’t get stuck with points. It’s like Tetris, but with cards.</p>
+                    <p class="price">$5.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://www.jeupetille.com/5636-medium_default/uno.jpg" alt="Uno">
+                    <h3>Uno</h3>
+                    <p class="description">Get rid of all your cards and scream “UNO!” before anyone else. Forget to say it? Draw two. Karma’s a beast.</p>
+                    <p class="price">$3.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://cdn.cultura.com/cdn-cgi/image/width=830/media/pim/25_241187_1_10_FR.jpg" alt="52 Cards">
+                    <h3>French 52-Card Deck</h3>
+                    <p class="description">The classic deck of cards. Play poker, blackjack, or just build card towers. The possibilities are endless, just like your procrastination.</p>
+                    <p class="price">$2.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Honorable Mentions -->
+        <div class="category">
+            <h2>Honorable Mentions</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://www.hasbro.com/common/productimages/fr_CA/80fb5bca50569047f5f45eb5df88daf4/1B48CEBB50569047F51E4E0E39FCC6AE.jpg" alt="Connect 4">
+                    <h3>Connect 4</h3>
+                    <p class="description">Drop your tokens and connect four before your opponent. It’s like tic-tac-toe, but in 3D and with more gravity.</p>
+                    <p class="price">$4.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://boardgameswizard.com/wp-content/uploads/2018/10/mastermind_board_game.jpg" alt="Master Mind">
+                    <h3>Master Mind</h3>
+                    <p class="description">Crack the code before time runs out. It’s like hacking, but legal and with colorful pegs.</p>
+                    <p class="price">$7.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/71B6zU8CccL.jpg" alt="Codenames">
+                    <h3>Codenames</h3>
+                    <p class="description">Give one-word clues to help your team guess the right words. It’s like being a spy, but with less danger and more laughter.</p>
+                    <p class="price">$8.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h3>Your Cart</h3>
+        <p>0 items</p>
+    </div>
+
+    <footer>
+        <p>Team SideQuest: Off Class</p>
+    </footer>
+</body>
+</html>
